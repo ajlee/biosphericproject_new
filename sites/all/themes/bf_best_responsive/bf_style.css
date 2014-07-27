@@ -1,0 +1,597 @@
+@font-face {
+  font-family: Tiempos;
+  src: url("Tiempos Headline-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Tiempos;
+  font-style: italic;
+  src: url("Tiempos Headline-BoldItalic.otf") format("opentype");
+}
+
+/* line 15, ../sass/bf_style.scss */
+h1, h2 {
+  font-family: Tiempos, Georgia, Times New Roman, "sans-serif";
+}
+
+/* line 16, ../sass/bf_style.scss */
+#logo h1 a, #logo h2 a {
+  color: black;
+}
+
+/* line 17, ../sass/bf_style.scss */
+p, li, h3, h4, h5, h6, article, section, span, a, a:hover, .meta, .meta a, body a, .field-name-field-tags a {
+  color: black;
+}
+
+/* line 18, ../sass/bf_style.scss */
+p, article, section {
+  line-height: 1.6em;
+}
+
+/* line 19, ../sass/bf_style.scss */
+#primary h1, #primary h2, #sidebar a, .meta a, body a, .field-name-field-tags a, #footer-area a {
+  color: #2A2317;
+}
+
+/* line 20, ../sass/bf_style.scss */
+#content-wrap img, .page-node #content-wrap img {
+  background-color: #F7F7F7;
+  border-color: #DDDDDD;
+  border-style: solid;
+  border-width: 1px;
+  float: left;
+  margin: 0 15px 15px 0;
+  padding: 5px;
+}
+
+/*responsive*/
+/* line 37, ../sass/bf_style.scss */
+#header {
+  background: transparent;
+}
+
+/* line 38, ../sass/bf_style.scss */
+#navigation #main-menu ul li a:not(.active) {
+  color: black;
+  font-weight: bold;
+}
+
+/* line 39, ../sass/bf_style.scss */
+#navigation #main-menu ul li a.active {
+  background: none repeat scroll 0 0 black;
+}
+
+/* line 40, ../sass/bf_style.scss */
+#navigation #main-menu ul li a:hover:not(.active) {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+/* line 42, ../sass/bf_style.scss */
+#header .transparency {
+  width: 100%;
+  opacity: 0.3;
+  background-color: white;
+  position: absolute;
+  z-index: -1;
+  -webkit-border-radius: 15px 15px;
+  -moz-border-radius: 15px / 15px;
+  border-radius: 15px / 15px;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0 0 10px white;
+  -moz-box-shadow: 0 0 10px white;
+  box-shadow: 0 0 10px white;
+}
+@media only screen and (max-width: 959px) {
+  /* line 42, ../sass/bf_style.scss */
+  #header .transparency {
+    height: 280px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 42, ../sass/bf_style.scss */
+  #header .transparency {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 959px) {
+  /* line 42, ../sass/bf_style.scss */
+  #header .transparency {
+    height: 140px;
+  }
+}
+
+/* line 64, ../sass/bf_style.scss */
+#logo img {
+  display: block;
+  max-width: 70px;
+}
+
+/* line 67, ../sass/bf_style.scss */
+#site-logo {
+  margin-left: 0px;
+  width: 20%;
+}
+
+/* line 68, ../sass/bf_style.scss */
+#site-logo li {
+  margin-right: 0px;
+}
+
+/* line 69, ../sass/bf_style.scss */
+#site-slogan {
+  font-family: "Open Sans", Arial;
+  background: none repeat scroll 0 0;
+  font-size: 0.9em;
+  font-weight: 300;
+  margin: -30px 1% 10px 1%;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  width: 90%;
+  clear: both;
+  padding: 10px 15% 10px 2%;
+  /*will break on a mobile*/
+}
+
+/* line 83, ../sass/bf_style.scss */
+#header h1 a {
+  width: 30%;
+  margin-top: -15px;
+  margin-left: 30px;
+}
+
+/* line 84, ../sass/bf_style.scss */
+#header h1 a span {
+  text-shadow: 0px 0px 30px rgba(30, 28, 28, 0.6);
+  width: 30%;
+}
+
+@media only screen and (max-width: 959px) {
+  /* line 89, ../sass/bf_style.scss */
+  #site-logo {
+    width: 100%;
+  }
+
+  /* line 90, ../sass/bf_style.scss */
+  #site-logo ul, #site-logo ol {
+    margin: 0px;
+  }
+
+  /* line 91, ../sass/bf_style.scss */
+  #mif_logo {
+    float: right;
+    clear: none;
+  }
+
+  /* line 92, ../sass/bf_style.scss */
+  #bf_logo {
+    float: left;
+    clear: none;
+  }
+
+  /* line 93, ../sass/bf_style.scss */
+  #site-name a span {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  /* line 94, ../sass/bf_style.scss */
+  #site-logo {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* line 95, ../sass/bf_style.scss */
+  #navigation {
+    background: #333;
+  }
+
+  /* line 96, ../sass/bf_style.scss */
+  #site-slogan {
+    width: auto;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  /* line 97, ../sass/bf_style.scss */
+  #header h1 a {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* line 98, ../sass/bf_style.scss */
+  #header h1 a span {
+    width: 100%;
+  }
+
+  /* line 99, ../sass/bf_style.scss */
+  #navigation {
+    display: block;
+    background: transparent;
+    width: 35%;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  /* line 100, ../sass/bf_style.scss */
+  #navigation li {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 959px) {
+  /* line 104, ../sass/bf_style.scss */
+  #primary #sidebar {
+    width: 220px !important;
+  }
+
+  /*ie fix*/
+  /* line 105, ../sass/bf_style.scss */
+  #site-slogan {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 109, ../sass/bf_style.scss */
+  #primary, .status {
+    clear: both;
+  }
+
+  /* line 110, ../sass/bf_style.scss */
+  #navigation {
+    width: 80%;
+    position: absolute;
+    top: 260px;
+    margin: 0 auto;
+  }
+
+  /* line 111, ../sass/bf_style.scss */
+  #primary #sidebar {
+    width: 340px;
+  }
+
+  /* line 112, ../sass/bf_style.scss */
+  #site-slogan {
+    margin-top: 20px;
+  }
+}
+/* line 115, ../sass/bf_style.scss */
+#site-name {
+  font-family: "Tiempos", "Georgia", sans-serif;
+}
+
+/* line 120, ../sass/bf_style.scss */
+#site-logo ul {
+  display: inline;
+}
+
+/* line 121, ../sass/bf_style.scss */
+#site-logo ul li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 122, ../sass/bf_style.scss */
+#site-logo ul li:first-of-type {
+  margin-right: 10%;
+}
+
+/* line 123, ../sass/bf_style.scss */
+#header #main-menu a {
+  font-size: 150%;
+}
+
+/* line 124, ../sass/bf_style.scss */
+#header #main-menu .active {
+  -webkit-box-shadow: 0 0 2px black;
+  -moz-box-shadow: 0 0 2px black;
+  box-shadow: 0 0 2px black;
+  text-shadow: none;
+}
+
+/* line 126, ../sass/bf_style.scss */
+.breadcrumb, .breadcrumb a {
+  color: white;
+}
+
+/* line 127, ../sass/bf_style.scss */
+.breadcrumb {
+  font-size: 1.3em;
+}
+
+/* line 130, ../sass/bf_style.scss */
+body:before {
+  content: " ";
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(5px, rgba(0, 0, 0, 0)), color-stop(60%, #000000));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 5px, #000000 60%);
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0) 5px, #000000 60%);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0) 5px, #000000 60%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 5px, #000000 60%);
+}
+
+/* line 139, ../sass/bf_style.scss */
+body {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+/*background*/
+@media screen and (min-width: 1440px) {
+  /* line 148, ../sass/bf_style.scss */
+  body {
+    background-image: url("/sites/all/themes/bf_best_responsive/BIOSPHERIC_mushroom_web2000px.jpg");
+  }
+
+  /* line 149, ../sass/bf_style.scss */
+  body:before {
+    height: 1440px;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1440px) {
+  /* line 154, ../sass/bf_style.scss */
+  body {
+    background-image: url("/sites/all/themes/bf_best_responsive/BIOSPHERIC_mushroom_web1440px.jpg");
+  }
+
+  /* line 155, ../sass/bf_style.scss */
+  body:before {
+    height: 960px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  /* line 159, ../sass/bf_style.scss */
+  body {
+    background-image: url("/sites/all/themes/bf_best_responsive/BIOSPHERIC_mushroom_web1060px.jpg");
+  }
+
+  /* line 160, ../sass/bf_style.scss */
+  body:before {
+    height: 707px;
+  }
+
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(5px, rgba(0, 0, 0, 0)), color-stop(75%, #000000));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 5px, #000000 75%);
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0) 5px, #000000 75%);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0) 5px, #000000 75%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 5px, #000000 75%);
+}
+@media screen and (max-width: 600px) {
+  /* line 165, ../sass/bf_style.scss */
+  body {
+    background-image: none;
+  }
+
+  /* line 166, ../sass/bf_style.scss */
+  body:before {
+    height: 400px;
+  }
+}
+/* line 168, ../sass/bf_style.scss */
+#primary, #sidebar .block h2 span, #sidebar .block h2 {
+  background: transparent;
+}
+
+/* line 169, ../sass/bf_style.scss */
+#primary {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+/* line 170, ../sass/bf_style.scss */
+#primary #content #content-wrap, #primary #content article, aside#sidebar, #footer-area, .block-countdown {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 15px 15px;
+  -moz-border-radius: 15px / 15px;
+  border-radius: 15px / 15px;
+  -webkit-box-shadow: 0 0 10px white;
+  -moz-box-shadow: 0 0 10px white;
+  box-shadow: 0 0 10px white;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom: none;
+  margin-bottom: 30px;
+}
+
+/* line 182, ../sass/bf_style.scss */
+#primary #content p {
+  color: black;
+}
+
+/*blog feed*/
+/* line 188, ../sass/bf_style.scss */
+.front .field-name-body img {
+  display: none !important;
+}
+
+/* line 189, ../sass/bf_style.scss */
+.front li.comment_forbidden, .front ul li.comment-add {
+  display: none !important;
+}
+
+/* line 190, ../sass/bf_style.scss */
+.field-name-field-thumbnail-image .field-label {
+  display: none;
+}
+
+/* line 191, ../sass/bf_style.scss */
+.front .node-readmore {
+  display: none;
+}
+
+/* line 192, ../sass/bf_style.scss */
+.field-name-field-tags a {
+  background-color: #AAAAAA;
+}
+
+/*article pages*/
+/* line 196, ../sass/bf_style.scss */
+.comment_form .username {
+  margin-left: 1px;
+}
+
+/*blocks*/
+/* line 201, ../sass/bf_style.scss */
+.view-profiles-block td {
+  width: 50%;
+}
+
+/* line 205, ../sass/bf_style.scss */
+.view-profiles-block tr:nth-child(odd) {
+  background-color: white;
+}
+
+/* line 209, ../sass/bf_style.scss */
+.view-profiles-block .views-field-nothing {
+  border-right: none;
+}
+
+/* line 212, ../sass/bf_style.scss */
+.view-profiles-block h6 {
+  font-size: 0.9em;
+  display: inline;
+}
+
+/* line 214, ../sass/bf_style.scss */
+.view-profiles-block td {
+  vertical-align: top;
+}
+
+/*profile page*/
+/* line 217, ../sass/bf_style.scss */
+.profile a#profile-main {
+  display: none;
+}
+
+/* line 218, ../sass/bf_style.scss */
+.profile h3 {
+  display: none;
+}
+
+/* line 219, ../sass/bf_style.scss */
+.profile h1, .profile h2 {
+  display: inline;
+  font-size: 1.2em;
+}
+
+/* line 220, ../sass/bf_style.scss */
+.profile h1:after {
+  content: ":  ";
+}
+
+/* line 221, ../sass/bf_style.scss */
+.page-user .page-title {
+  display: none;
+}
+
+/* line 223, ../sass/bf_style.scss */
+.profile p {
+  margin-bottom: 6px;
+}
+
+/*plugins*/
+/*block thing*/
+/* line 231, ../sass/bf_style.scss */
+.block-views-site-tweets-block ul, block-aggregator-feed-1 ul {
+  list-style: none;
+  margin-left: -20px;
+}
+
+/* line 235, ../sass/bf_style.scss */
+.block-views-site-tweets-block ul, .block-aggregator-feed-1 ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555;
+  margin-bottom: 20px;
+  border-bottom: 1px dotted #ababab;
+  padding-bottom: 20px;
+}
+
+/* line 242, ../sass/bf_style.scss */
+.block .views-field-field-role {
+  font-size: 90%;
+}
+
+/* line 243, ../sass/bf_style.scss */
+.block-countdown .content {
+  font-family: "Tiempos", "Georgia", sans-serif;
+  color: black;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* line 246, ../sass/bf_style.scss */
+#block-search-form h2 {
+  display: inline;
+  float: left;
+}
+
+/*comments*/
+/* line 250, ../sass/bf_style.scss */
+#comment-form .username {
+  padding: 0 5px;
+}
+
+/* line 251, ../sass/bf_style.scss */
+#comments .username {
+  font-weight: bold;
+}
+
+/*fb comment - make it responsive*/
+/* line 254, ../sass/bf_style.scss */
+.fb-comments {
+  width: 100% !important;
+}
+
+/* line 255, ../sass/bf_style.scss */
+.fb-comments iframe[style] {
+  width: 100% !important;
+}
+
+/* line 256, ../sass/bf_style.scss */
+.fb-like-box {
+  width: 100% !important;
+}
+
+/* line 257, ../sass/bf_style.scss */
+.fb-like-box iframe[style] {
+  width: 100% !important;
+}
+
+/* line 258, ../sass/bf_style.scss */
+.fb-comments span {
+  width: 100% !important;
+}
+
+/* line 259, ../sass/bf_style.scss */
+.fb-comments iframe span[style] {
+  width: 100% !important;
+}
+
+/* line 260, ../sass/bf_style.scss */
+.fb-like-box span {
+  width: 100% !important;
+}
+
+/* line 261, ../sass/bf_style.scss */
+.fb-like-box iframe span[style] {
+  width: 100% !important;
+}

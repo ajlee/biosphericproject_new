@@ -1,0 +1,13 @@
+name = Diskfree
+description = "Generate reports on the amount of available disk space on a server with a real commandline."
+core = 7.x
+configure = admin/config/system/diskfree
+files[] = diskfree.module
+files[] = diskfree.install
+files[] = diskfree.admin.inc
+; Information added by drupal.org packaging script on 2012-07-27
+version = "7.x-1.1"
+core = "7.x"
+project = "diskfree"
+datestamp = "1343407338"
+
